@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_text_enter">Enter</string>
+    <string name="btn_text_registration">Registration</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_user_name">User name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_home">Home</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_add_photo">Add Photo</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="search_title">Search</string>
+</resources>

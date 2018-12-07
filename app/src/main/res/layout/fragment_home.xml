@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/photo_fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/home.appbar"
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_home_photo"
+                android:layout_centerInParent="true"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/profile_image"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="1dp" />
+
+            <ImageButton
+                android:id="@+id/img_add_photo"
+                android:padding="12dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/anim_library_to_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/txt_home_name"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/img_home_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:elevation="10dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home.appbar">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/inner_pager_title_strip"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff" />
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
